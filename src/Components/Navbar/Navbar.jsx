@@ -1,6 +1,7 @@
 import React from "react";
 import logoImg from "../../assets/logo.png";
 import { FaGithub } from "react-icons/fa6";
+import { NavLink } from "react-router";
 
 const Navbar = () => {
   return (
@@ -29,39 +30,111 @@ const Navbar = () => {
               tabIndex={0}
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
-              <li>
-                <a>Item 1</a>
-              </li>
-              <li>
-                <a>Parent</a>
-              </li>
-              <li>
-                <a>Item 3</a>
-              </li>
+              <NavLink
+                to="/"
+                end
+                className={({ isActive }) =>
+                  `relative pb-1 font-semibold transition 
+          ${
+            isActive
+              ? "active after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-[linear-gradient(125.07deg,rgba(99,46,227,1),rgba(159,98,242,1)_100%)]"
+              : "text-gray-600 hover:text-purple-500 after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 hover:after:w-full after:transition-all after:bg-purple-400"
+          }`
+                }
+              >
+                Home
+              </NavLink>
+
+              <NavLink
+                to="/apps"
+                className={({ isActive }) =>
+                  `relative pb-1 font-semibold transition 
+          ${
+            isActive
+              ? "active after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-[linear-gradient(125.07deg,rgba(99,46,227,1),rgba(159,98,242,1)_100%)]"
+              : "text-gray-600 hover:text-purple-500 after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 hover:after:w-full after:transition-all after:bg-purple-400"
+          }`
+                }
+              >
+                Apps
+              </NavLink>
+
+              <NavLink
+                to="/installation"
+                className={({ isActive }) =>
+                  `relative pb-1 font-semibold transition 
+          ${
+            isActive
+              ? "active after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-[linear-gradient(125.07deg,rgba(99,46,227,1),rgba(159,98,242,1)_100%)]"
+              : "text-gray-600 hover:text-purple-500 after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 hover:after:w-full after:transition-all after:bg-purple-400"
+          }`
+                }
+              >
+                Installation
+              </NavLink>
             </ul>
           </div>
-          <div className="flex gap-3 items-center">
-            <img src={logoImg} alt="" className="w-[40px]" />
-            <a className="text-lg font-bold bg-gradient-to-br from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent">
-              HERO.IO
-            </a>
-          </div>
+          <NavLink to="/">
+            <div className="flex gap-3 items-center">
+              <img src={logoImg} alt="" className="w-[40px]" />
+              <span className="text-lg font-bold bg-gradient-to-br from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent">
+                HERO.IO
+              </span>
+            </div>
+          </NavLink>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
-            <li>
-              <a>Home</a>
-            </li>
-            <li>
-              <a>Apps</a>
-            </li>
-            <li>
-              <a>Installation</a>
-            </li>
-          </ul>
+          <nav className="flex gap-8 items-center">
+            <NavLink
+              to="/"
+              end
+              className={({ isActive }) =>
+                `relative pb-1 font-semibold transition 
+          ${
+            isActive
+              ? "active after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-[linear-gradient(125.07deg,rgba(99,46,227,1),rgba(159,98,242,1)_100%)]"
+              : "text-gray-600 hover:text-purple-500 after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 hover:after:w-full after:transition-all after:bg-purple-400"
+          }`
+              }
+            >
+              Home
+            </NavLink>
+
+            <NavLink
+              to="/apps"
+              className={({ isActive }) =>
+                `relative pb-1 font-semibold transition 
+          ${
+            isActive
+              ? "active after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-[linear-gradient(125.07deg,rgba(99,46,227,1),rgba(159,98,242,1)_100%)]"
+              : "text-gray-600 hover:text-purple-500 after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 hover:after:w-full after:transition-all after:bg-purple-400"
+          }`
+              }
+            >
+              Apps
+            </NavLink>
+
+            <NavLink
+              to="/installation"
+              className={({ isActive }) =>
+                `relative pb-1 font-semibold transition 
+          ${
+            isActive
+              ? "active after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-[linear-gradient(125.07deg,rgba(99,46,227,1),rgba(159,98,242,1)_100%)]"
+              : "text-gray-600 hover:text-purple-500 after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 hover:after:w-full after:transition-all after:bg-purple-400"
+          }`
+              }
+            >
+              Installation
+            </NavLink>
+          </nav>
         </div>
         <div className="navbar-end">
-          <a className="btn bg-gradient-to-br from-[#632EE3] to-[#9F62F2] text-white text-[16px] font-semibold" href="" target="_blank">
+          <a
+            className="btn bg-gradient-to-br from-[#632EE3] to-[#9F62F2] text-white text-[16px] font-semibold"
+            href="https://github.com/Shamim-Islam"
+            target="_blank"
+          >
             <FaGithub />
             Contribute
           </a>
