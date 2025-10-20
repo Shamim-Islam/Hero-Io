@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "image": "https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/whatsapp.svg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg",
     "title": "WhatsApp",
     "companyName": "Meta Platforms, Inc.",
     "description": "WhatsApp is a secure and fast messaging service that supports text, audio, and video communication across platforms. It offers end-to-end encryption, group messaging, media sharing, and is used by over two billion people worldwide to stay connected with friends, family, and colleagues.",
@@ -19,7 +19,7 @@
   },
   {
     "id": 2,
-    "image": "https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/tiktok.svg",
+    "image": "https://upload.wikimedia.org/wikipedia/en/a/a9/TikTok_logo.svg",
     "title": "TikTok",
     "companyName": "ByteDance",
     "description": "TikTok allows users to create, discover, and share short videos with a vibrant community. It features built-in editing tools, filters, music integration, and powerful recommendation algorithms that make it one of the most addictive and engaging platforms in the world.",
@@ -37,7 +37,7 @@
   },
   {
     "id": 3,
-    "image": "https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/instagram.svg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg",
     "title": "Instagram",
     "companyName": "Meta Platforms, Inc.",
     "description": "Instagram is a global platform for sharing photos, videos, and stories. It allows users to showcase creativity through posts, Reels, and live sessions while connecting with others through comments, likes, and direct messages. Its aesthetic design and influencer culture have shaped modern social media trends.",
@@ -55,7 +55,7 @@
   },
   {
     "id": 4,
-    "image": "https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/facebook.svg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg",
     "title": "Facebook",
     "companyName": "Meta Platforms, Inc.",
     "description": "Facebook helps people stay connected with friends, share updates, create communities, and discover events worldwide. It features Marketplace, Watch, Groups, and Pages, allowing both personal and business engagement on a massive scale.",
@@ -73,7 +73,7 @@
   },
   {
     "id": 5,
-    "image": "https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/snapchat.svg",
+    "image": "https://upload.wikimedia.org/wikipedia/en/c/c4/Snapchat_logo.svg",
     "title": "Snapchat",
     "companyName": "Snap Inc.",
     "description": "Snapchat revolutionized ephemeral messaging with disappearing Snaps and creative filters. It enables users to share real-time moments, discover AR lenses, play games, and explore stories from publishers and friends in a fun, spontaneous way.",
@@ -91,7 +91,7 @@
   },
   {
     "id": 6,
-    "image": "https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/telegram.svg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg",
     "title": "Telegram",
     "companyName": "Telegram FZ-LLC",
     "description": "Telegram is a messaging app focused on privacy and performance. It supports large groups, bots, channels, media sharing, and cloud synchronization across devices. It's known for its speed, encryption, and openness to developers.",
@@ -109,7 +109,7 @@
   },
   {
     "id": 7,
-    "image": "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/discord.svg",
+    "image": "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/discord-round-color-icon.png",
     "title": "Discord",
     "companyName": "Discord Inc.",
     "description": "Discord is a communication platform for communities and friends to chat via text, voice, and video. It features servers, channels, screen sharing, and robust moderation tools, popular among gamers, study groups, and online communities.",
@@ -127,7 +127,7 @@
   },
   {
     "id": 8,
-    "image": "https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/spotify.svg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg",
     "title": "Spotify",
     "companyName": "Spotify AB",
     "description": "Spotify is a music streaming app that gives access to millions of tracks and podcasts. Users can follow artists, build playlists, and discover new music through personalized recommendations powered by AI.",
@@ -145,7 +145,7 @@
   },
   {
     "id": 9,
-    "image": "https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/youtube.svg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg",
     "title": "YouTube",
     "companyName": "Google LLC",
     "description": "YouTube is the world's largest video-sharing platform, offering billions of videos from creators around the world. It includes Shorts, livestreams, playlists, and community interactions, revolutionizing entertainment and education online.",
@@ -163,7 +163,7 @@
   },
   {
     "id": 10,
-    "image": "https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/netflix.svg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg",
     "title": "Netflix",
     "companyName": "Netflix, Inc.",
     "description": "Netflix is a streaming platform offering movies, TV shows, documentaries, and originals. Its recommendation system, offline downloads, and multi-device support make it a global entertainment leader.",
@@ -181,7 +181,7 @@
   },
   {
     "id": 11,
-    "image": "https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/twitter.svg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/5a/X_icon_2.svg",
     "title": "Twitter (X)",
     "companyName": "X Corp.",
     "description": "Twitter, rebranded as X, is a real-time microblogging platform for global conversation. Users can share thoughts, links, and media, follow trends, and engage in live discussions around politics, sports, entertainment, and more.",
@@ -199,7 +199,7 @@
   },
   {
     "id": 12,
-    "image": "https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/linkedin.svg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png",
     "title": "LinkedIn",
     "companyName": "Microsoft",
     "description": "LinkedIn is the world's largest professional networking platform. It connects professionals, helps people find jobs, and enables businesses to share insights, recruit, and advertise to targeted audiences.",
@@ -217,7 +217,7 @@
   },
   {
     "id": 13,
-    "image": "https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/zoom.svg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Zoom_Communications_Logo.svg",
     "title": "Zoom",
     "companyName": "Zoom Video Communications, Inc.",
     "description": "Zoom is a cloud-based video conferencing app used for meetings, webinars, and online collaboration. It features HD video, screen sharing, breakout rooms, and recording options, making it essential for remote work and education.",
@@ -235,7 +235,7 @@
   },
   {
     "id": 14,
-    "image": "https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/slack.svg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Slack_icon_2019.svg",
     "title": "Slack",
     "companyName": "Salesforce",
     "description": "Slack is a collaboration tool for teams, combining real-time messaging, file sharing, and integrations with hundreds of apps. It simplifies workplace communication through channels, threads, and workflows.",
@@ -253,7 +253,7 @@
   },
   {
     "id": 15,
-    "image": "https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/uber.svg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/62/Uber_logo.svg",
     "title": "Uber",
     "companyName": "Uber Technologies, Inc.",
     "description": "Uber connects riders and drivers through its platform, offering transportation, food delivery (Uber Eats), and freight services. It redefined urban mobility through convenience, affordability, and innovation.",
@@ -271,7 +271,7 @@
   },
   {
     "id": 16,
-    "image": "https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/airbnb.svg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/69/Airbnb_Logo_B%C3%A9lo.svg",
     "title": "Airbnb",
     "companyName": "Airbnb, Inc.",
     "description": "Airbnb connects travelers with hosts who offer unique stays, homes, and experiences around the world. It transformed the hospitality industry by enabling peer-to-peer lodging and cultural exchange.",
@@ -289,7 +289,7 @@
   },
   {
     "id": 17,
-    "image": "https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/pinterest.svg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/08/Pinterest-logo.png",
     "title": "Pinterest",
     "companyName": "Pinterest, Inc.",
     "description": "Pinterest is a visual discovery engine where users can find and save creative ideas, recipes, home inspiration, and more. It helps users plan and organize projects visually through pins and boards.",
@@ -307,7 +307,7 @@
   },
   {
     "id": 18,
-    "image": "https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/gmail.svg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Gmail_icon_%282020%29.svg",
     "title": "Gmail",
     "companyName": "Google LLC",
     "description": "Gmail is a free, reliable, and secure email service by Google. It offers spam protection, powerful search, integration with Google Workspace, and large storage capacity, making it the go-to communication platform for millions.",
@@ -325,7 +325,7 @@
   },
   {
     "id": 19,
-    "image": "https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/messenger.svg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/be/Facebook_Messenger_logo_2020.svg",
     "title": "Messenger",
     "companyName": "Meta Platforms, Inc.",
     "description": "Messenger is Meta's instant messaging app that supports text, voice, video calls, and group chats. It integrates with Facebook and Instagram, enabling users to connect instantly across multiple Meta services.",
@@ -343,7 +343,7 @@
   },
   {
     "id": 20,
-    "image": "https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/paypal.svg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg",
     "title": "PayPal",
     "companyName": "PayPal Holdings, Inc.",
     "description": "PayPal enables secure and fast online payments, money transfers, and global e-commerce support. It provides buyer and seller protection, making it one of the most trusted payment platforms worldwide.",

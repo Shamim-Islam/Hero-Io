@@ -32,7 +32,7 @@ const AllApps = () => {
             ({filtered.length}) Apps Found
           </h2>
 
-          <div style={{ display: "flex", gap: 8, alignItems: "center" }}>
+          <div className="flex gap-8 items-center flex-col md:flex-row">
             <input
               className="search-input border p-2 rounded"
               placeholder="Search apps..."
