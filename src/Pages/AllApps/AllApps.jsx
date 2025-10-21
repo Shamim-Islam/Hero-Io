@@ -6,16 +6,15 @@ import AppNotFound from "../AppNotFound/AppNotFound";
 const AllApps = () => {
   const appsData = useLoaderData();
   const [q, setQ] = useState("");
-  const [sort, setSort] = useState("");
-  const apps = appsData.slice();
+  // const apps = appsData.slice();
+
+  const apps = Array.isArray(appsData) ? appsData : appsData?.apps || [];
 
   const filtered = useMemo(() => {
     const term = q.trim().toLowerCase();
     let out = apps.filter((a) => a.title.toLowerCase().includes(term));
-    if (sort === "high") out = out.sort((a, b) => b.downloads - a.downloads);
-    if (sort === "low") out = out.sort((a, b) => a.downloads - b.downloads);
     return out;
-  }, [q, sort, apps]);
+  }, [q, apps]);
 
   return (
     <div className="bg-[#62738214]">
@@ -27,7 +26,7 @@ const AllApps = () => {
           </p>
         </div>
 
-        <div className="flex justify-between items-center mt-[40px]">
+        <div className="flex justify-between items-center mt-[40px] flex-col md:flex-row gap-5">
           <h2 className="text-[24px] font-semibold">
             ({filtered.length}) Apps Found
           </h2>
@@ -39,15 +38,6 @@ const AllApps = () => {
               value={q}
               onChange={(e) => setQ(e.target.value)}
             />
-            <select
-              value={sort}
-              onChange={(e) => setSort(e.target.value)}
-              className="border p-2 rounded"
-            >
-              <option value="">Sort</option>
-              <option value="high">Downloads: High-Low</option>
-              <option value="low">Downloads: Low-High</option>
-            </select>
           </div>
         </div>
 

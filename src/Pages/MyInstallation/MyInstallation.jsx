@@ -6,10 +6,12 @@ import { toast } from "react-toastify";
 
 const MyInstallation = () => {
   const [installed, setInstalled] = useState([]);
-  const appsData = useLoaderData();
+  const appsData = useLoaderData(); // loader might return an object
 
-  const [q, setQ] = useState("");
   const [sort, setSort] = useState("");
+
+  // ensure appsData is always an array
+  const appsArray = Array.isArray(appsData) ? appsData : appsData?.apps || []; // fallback if JSON is { apps: [...] }
 
   useEffect(() => {
     const list = JSON.parse(localStorage.getItem("app_installed") || "[]");
@@ -23,16 +25,15 @@ const MyInstallation = () => {
     );
     localStorage.setItem(key, JSON.stringify(list));
     setInstalled(list);
-    
     toast.info("App uninstalled successfully!");
-
   }
 
-  const apps = installed
-    .map((id) => appsData.find((a) => a.id === id))
-    .filter(Boolean);
+  const apps = useMemo(
+    () =>
+      installed.map((id) => appsArray.find((a) => a.id === id)).filter(Boolean),
+    [installed, appsArray]
+  );
 
-  // sorting logic
   const sortedApps = useMemo(() => {
     let sorted = [...apps];
     if (sort === "high") {
@@ -58,7 +59,7 @@ const MyInstallation = () => {
 
   return (
     <div className="bg-[#62738214]">
-      <section className="py-[80px]  max-w-[1440px] mx-auto">
+      <section className="py-[80px] max-w-[1440px] mx-auto">
         <div className="text-center">
           <h1 className="text-[48px] font-bold">Your Installed Apps</h1>
           <p className="text-xl text-[#627382]">
@@ -66,7 +67,6 @@ const MyInstallation = () => {
           </p>
         </div>
         <div className="flex justify-between items-center mt-[40px]">
-          {" "}
           <h2 className="text-[24px] font-semibold">
             ({sortedApps.length}) Apps Found
           </h2>
@@ -83,12 +83,12 @@ const MyInstallation = () => {
           </div>
         </div>
         {sortedApps.length === 0 ? (
-          <NotInstalled></NotInstalled>
+          <NotInstalled />
         ) : (
           <InstalledApp
             sortedApps={sortedApps}
             handleUninstall={handleUninstall}
-          ></InstalledApp>
+          />
         )}
       </section>
     </div>

@@ -1,19 +1,22 @@
 import React from "react";
 import Hero from "../../Components/Hero/Hero";
 import Banner from "../../Components/Banner/Banner";
-import { NavLink, useLoaderData } from "react-router";
 import AllTrendingApps from "../../Components/allTrendingApps/allTrendingApps";
+import { useLoaderData } from "react-router";
 
 const Home = () => {
   const appsData = useLoaderData();
 
-  const top8 = appsData.slice(0, 8);
+  const appsArray = Array.isArray(appsData) ? appsData : appsData?.apps || [];
+  const top8 = appsArray.slice(0, 8);
+
+  if (!appsArray.length) return <p>Loading apps...</p>;
 
   return (
-    <div className="">
-      <Hero></Hero>
-      <Banner></Banner>
-      <AllTrendingApps top8={top8}></AllTrendingApps>
+    <div>
+      <Hero />
+      <Banner />
+      <AllTrendingApps top8={top8} />
     </div>
   );
 };

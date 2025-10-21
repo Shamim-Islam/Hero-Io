@@ -1,7 +1,7 @@
 import React from "react";
 import logoImg from "../../assets/logo.png";
 import { FaGithub } from "react-icons/fa6";
-import { NavLink } from "react-router";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -28,7 +28,7 @@ const Navbar = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
             >
               <NavLink
                 to="/"
@@ -134,6 +134,7 @@ const Navbar = () => {
             className="btn bg-gradient-to-br from-[#632EE3] to-[#9F62F2] text-white text-[16px] font-semibold"
             href="https://github.com/Shamim-Islam"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <FaGithub />
             Contribute
