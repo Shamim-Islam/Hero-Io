@@ -1,4 +1,4 @@
-# HeroIO
+# HeroIO - Appstore
 
 **HeroIO** — a responsive App Store UI built with React and Vite.
 
