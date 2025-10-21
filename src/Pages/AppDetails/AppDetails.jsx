@@ -3,6 +3,7 @@ import { useLoaderData, useParams } from "react-router";
 import downloadImg from "../../assets/icon-downloads.png";
 import ratingsImg from "../../assets/icon-ratings.png";
 import reviewImg from "../../assets/icon-review.png";
+import { toast } from "react-toastify";
 
 import {
   BarChart,
@@ -50,8 +51,10 @@ const AppDetails = () => {
       installedList.push(singleApp.id);
       localStorage.setItem(key, JSON.stringify(installedList));
       setInstalled(true);
-      // toast (simple)
-      alert("Installed " + singleApp.title);
+
+      toast.success(`${singleApp.title} installed successfully!`);
+    } else {
+      toast.warning(`${singleApp.title} is already installed!`);
     }
   }
 
@@ -111,7 +114,7 @@ const AppDetails = () => {
                   : "bg-[#00d390] hover:bg-[#00b97e]"
               }`}
               onClick={handleInstall}
-              disabled={installed}
+              // disabled={installed}
             >
               {installed ? "Installed" : `Install Now (${size} MB)`}
             </button>
@@ -144,7 +147,7 @@ const AppDetails = () => {
 
         <div className="divider"></div>
 
-        <div className="card" className="mt-10 pb-20">
+        <div className="mt-10 pb-20">
           <h3 className="text-2xl font-bold mb-6">Description</h3>
           <p className="small text-[#627382]">{description}</p>
         </div>
